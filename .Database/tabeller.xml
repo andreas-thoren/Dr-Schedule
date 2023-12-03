@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tabeller xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Anestesiologer>
+		<person>Kalle Anka</person>
+		<person>Musse Pigg</person>
+		<person>Långben</person>
+	</Anestesiologer>
+	<Students>
+		<person>Knatte</person>
+		<person>Fnatte</person>
+		<person>Tjatte</person>
+	</Students>
+	<Operation>
+		<position>Gynekologi</position>
+		<position>Kirurgi</position>
+		<position>Op ansvarig - Nord</position>
+		<position>Op ansvarig - Syd, Tel: 73680</position>
+		<position>Ortopedi</position>
+		<position>Preop bedömning</position>
+		<position>Snitt</position>
+		<position>Tand/Käk/Ögon</position>
+		<position>Urologi</position>
+		<position>Öron/Näsa/Hals</position>
+	</Operation>
+	<ICU>
+		<position>Dagjour, Tel: 32020</position>
+		<position>IVA 1</position>
+		<position>IVA 2</position>
+		<position>IVA ansvarig, Tel: 99802</position>
+		<position>IVA extra</position>
+	</ICU>
+	<OnCall>
+		<position>Bakjour</position>
+		<position>IVA jour, Tel: 99802</position>
+		<position>Primärjour, Tel: 32020</position>
+	</OnCall>
+	<Other>
+		<position>Access och Device</position>
+		<position>Administrativ</position>
+		<position>Akutsal</position>
+		<position>FoU</position>
+		<position>Gastric by pass</position>
+		<position>IVA</position>
+		<position>IVC</position>
+		<position>Klinisk lärare</position>
+		<position>MR/Röntgen</position>
+		<position>Sal 15/16</position>
+		<position>Salsplacering</position>
+		<position>ECT</position>
+	</Other>
+</tabeller>
