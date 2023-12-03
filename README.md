@@ -1,1 +1,2 @@
-# Excel-Dr-Schedule
+# Doctors day schedule
+Made for swedish Anaesthetists in Skövde. Schedule are created/edited in project excel file (dr_schedule.xlsm). Excel file is heavily empovered by vba. Every day schedule is exported and saved as an xml-file in .Database/Schedules folder. xml-files are reimported when days are changed in the excel file. No regular save of the excel file itself takes place other then if DevMode is set to True. Only xml-files are updated. You can also publish the schedules for viewing as a webpage. The main webpage file is static/schedule.html. This page uses iframe to embedd the actual day schedules, for ex Måndag.html etc.
