@@ -1,0 +1,12 @@
+{
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/static/styles",
+        }
+    ],
+    "liveSassCompile.settings.showOutputWindowOn": "Error",
+    "liveServer.settings.port": 5501,
+    "files.eol": "\r\n",
+}
