@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <schedule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<scheduledate>2023-01-06</scheduledate>
-	<weekday>Fredag</weekday>
+	<scheduledate>2023-01-02</scheduledate>
+	<weekday>Måndag</weekday>
 	<operation>
 		<record>
 			<Position>Op ansvarig - Syd, Tel: 73680</Position>
@@ -11,7 +11,7 @@
 		<record>
 			<Position>Kirurgi</Position>
 			<Doctor>"Null"</Doctor>
-			<Comment>sjätte</Comment>
+			<Comment>andra</Comment>
 		</record>
 		<record>
 			<Position>Gynekologi</Position>
