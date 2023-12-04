@@ -5,13 +5,13 @@
 	<operation>
 		<record>
 			<Position>Op ansvarig - Syd, Tel: 73680</Position>
-			<Doctor>"Null"</Doctor>
+			<Doctor>Kajsa Anka</Doctor>
 			<Comment>"Null"</Comment>
 		</record>
 		<record>
 			<Position>Kirurgi</Position>
-			<Doctor>"Null"</Doctor>
-			<Comment>fjärde</Comment>
+			<Doctor>Kalle Anka</Doctor>
+			<Comment>Keep away from mistress</Comment>
 		</record>
 		<record>
 			<Position>Gynekologi</Position>
@@ -62,7 +62,7 @@
 	<icu>
 		<record>
 			<Position>IVA ansvarig</Position>
-			<Doctor>"Null"</Doctor>
+			<Doctor>Musse Pigg</Doctor>
 			<Comment>"Null"</Comment>
 		</record>
 		<record>
@@ -89,8 +89,8 @@
 	<oncall>
 		<record>
 			<Position>Primärjour, Tel: 32020</Position>
-			<Doctor>"Null"</Doctor>
-			<Comment>"Null"</Comment>
+			<Doctor>Puff</Doctor>
+			<Comment>Fast but dangerous. Keep in check.</Comment>
 		</record>
 		<record>
 			<Position>IVA jour, Tel: 99802</Position>

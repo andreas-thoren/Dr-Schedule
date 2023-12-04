@@ -5,13 +5,13 @@
 	<operation>
 		<record>
 			<Position>Op ansvarig - Syd, Tel: 73680</Position>
-			<Doctor>"Null"</Doctor>
-			<Comment>"Null"</Comment>
+			<Doctor>Långben</Doctor>
+			<Comment>Slow but reliable</Comment>
 		</record>
 		<record>
 			<Position>Kirurgi</Position>
-			<Doctor>"Null"</Doctor>
-			<Comment>tredje</Comment>
+			<Doctor>Kajsa Anka</Doctor>
+			<Comment>Will do all the heavy lifting</Comment>
 		</record>
 		<record>
 			<Position>Gynekologi</Position>
@@ -62,8 +62,8 @@
 	<icu>
 		<record>
 			<Position>IVA ansvarig</Position>
-			<Doctor>"Null"</Doctor>
-			<Comment>"Null"</Comment>
+			<Doctor>Bamse</Doctor>
+			<Comment>Everyone will be treated fairly</Comment>
 		</record>
 		<record>
 			<Position>IVA 1</Position>
@@ -89,7 +89,7 @@
 	<oncall>
 		<record>
 			<Position>Primärjour, Tel: 32020</Position>
-			<Doctor>"Null"</Doctor>
+			<Doctor>Långben</Doctor>
 			<Comment>"Null"</Comment>
 		</record>
 		<record>

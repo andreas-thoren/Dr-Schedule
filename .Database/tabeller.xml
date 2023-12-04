@@ -4,6 +4,11 @@
 		<person>Kalle Anka</person>
 		<person>Musse Pigg</person>
 		<person>Långben</person>
+		<person>Kajsa Anka</person>
+		<person>Piff</person>
+		<person>Puff</person>
+		<person>Alexander Anka</person>
+		<person>Bamse</person>
 	</Anestesiologer>
 	<Students>
 		<person>Knatte</person>
@@ -27,7 +32,6 @@
 		<position>IVA 1</position>
 		<position>IVA 2</position>
 		<position>IVA ansvarig, Tel: 99802</position>
-		<position>IVA extra</position>
 	</ICU>
 	<OnCall>
 		<position>Bakjour</position>

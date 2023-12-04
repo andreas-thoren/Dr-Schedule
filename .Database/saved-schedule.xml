@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <schedule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<scheduledate>2023-01-06</scheduledate>
-	<weekday>Fredag</weekday>
+	<scheduledate>2023-01-05</scheduledate>
+	<weekday>Torsdag</weekday>
 	<operation>
 		<record>
 			<Position>Op ansvarig - Syd, Tel: 73680</Position>
-			<Doctor>"Null"</Doctor>
-			<Comment>"Null"</Comment>
+			<Doctor>Musse Pigg</Doctor>
+			<Comment>Someone made fun of his ears… ;(</Comment>
 		</record>
 		<record>
 			<Position>Kirurgi</Position>
-			<Doctor>"Null"</Doctor>
-			<Comment>sjätte</Comment>
+			<Doctor>Piff</Doctor>
+			<Comment>"Null"</Comment>
 		</record>
 		<record>
 			<Position>Gynekologi</Position>
-			<Doctor>"Null"</Doctor>
+			<Doctor>Puff</Doctor>
 			<Comment>"Null"</Comment>
 		</record>
 		<record>
@@ -62,8 +62,8 @@
 	<icu>
 		<record>
 			<Position>IVA ansvarig</Position>
-			<Doctor>"Null"</Doctor>
-			<Comment>"Null"</Comment>
+			<Doctor>Kalle Anka</Doctor>
+			<Comment>Avoid getting critically ill if possible..</Comment>
 		</record>
 		<record>
 			<Position>IVA 1</Position>
@@ -89,7 +89,7 @@
 	<oncall>
 		<record>
 			<Position>Primärjour, Tel: 32020</Position>
-			<Doctor>"Null"</Doctor>
+			<Doctor>Långben</Doctor>
 			<Comment>"Null"</Comment>
 		</record>
 		<record>
@@ -157,13 +157,13 @@
 	</outside>
 	<education>
 		<record>
-			<Position>"Null"</Position>
-			<Doctor>"Null"</Doctor>
+			<Position>Salsplacering</Position>
+			<Doctor>Knatte</Doctor>
 			<Comment>"Null"</Comment>
 		</record>
 		<record>
-			<Position>"Null"</Position>
-			<Doctor>"Null"</Doctor>
+			<Position>Sal 15/16</Position>
+			<Doctor>Fnatte</Doctor>
 			<Comment>"Null"</Comment>
 		</record>
 		<record>

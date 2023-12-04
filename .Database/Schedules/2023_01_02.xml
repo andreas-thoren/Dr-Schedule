@@ -5,22 +5,22 @@
 	<operation>
 		<record>
 			<Position>Op ansvarig - Syd, Tel: 73680</Position>
-			<Doctor>"Null"</Doctor>
+			<Doctor>Musse Pigg</Doctor>
 			<Comment>"Null"</Comment>
 		</record>
 		<record>
 			<Position>Kirurgi</Position>
-			<Doctor>"Null"</Doctor>
-			<Comment>andra</Comment>
+			<Doctor>Puff</Doctor>
+			<Comment>"Null"</Comment>
 		</record>
 		<record>
 			<Position>Gynekologi</Position>
-			<Doctor>"Null"</Doctor>
+			<Doctor>Piff</Doctor>
 			<Comment>"Null"</Comment>
 		</record>
 		<record>
 			<Position>Urologi</Position>
-			<Doctor>"Null"</Doctor>
+			<Doctor>Musse Pigg</Doctor>
 			<Comment>"Null"</Comment>
 		</record>
 		<record>
@@ -30,13 +30,13 @@
 		</record>
 		<record>
 			<Position>Op ansvarig - Nord</Position>
-			<Doctor>"Null"</Doctor>
-			<Comment>"Null"</Comment>
+			<Doctor>Musse Pigg</Doctor>
+			<Comment>Kalle Anka called in sick again…</Comment>
 		</record>
 		<record>
 			<Position>Ortopedi</Position>
-			<Doctor>"Null"</Doctor>
-			<Comment>"Null"</Comment>
+			<Doctor>No one here</Doctor>
+			<Comment>Hopes no one breaks anything today..</Comment>
 		</record>
 		<record>
 			<Position>Öron/Näsa/Hals</Position>
@@ -62,8 +62,8 @@
 	<icu>
 		<record>
 			<Position>IVA ansvarig</Position>
-			<Doctor>"Null"</Doctor>
-			<Comment>"Null"</Comment>
+			<Doctor>Alexander Anka</Doctor>
+			<Comment>Wish for luck</Comment>
 		</record>
 		<record>
 			<Position>IVA 1</Position>
@@ -89,8 +89,8 @@
 	<oncall>
 		<record>
 			<Position>Primärjour, Tel: 32020</Position>
-			<Doctor>"Null"</Doctor>
-			<Comment>"Null"</Comment>
+			<Doctor>Bamse</Doctor>
+			<Comment>Call if violent people come to the ER</Comment>
 		</record>
 		<record>
 			<Position>IVA jour, Tel: 99802</Position>

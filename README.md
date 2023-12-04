@@ -1,22 +1,26 @@
-# Doctors day schedule
-Made for swedish Anaesthetists in Skövde. Schedule is created/edited in project excel file (dr_schedule.xlsm). Excel file is heavily empovered by vba. Every day schedule is exported and saved as an xml-file in .Database/Schedules folder. xml-files are reimported when days are changed in the excel file. No regular save of the excel file itself takes place other then if DevMode is set to True. Only xml-files are updated. You can also publish the schedules for viewing as a webpage. The main webpage file is static/schedule.html. This page uses iframe to embedd the actual day schedules, for ex Måndag.html etc.
+# Doctors Day Schedule
 
-## Technical limitiations
-This project does not have a proper front-end <--> backend <--> database setup. This is due to limitations where I work. We dont have access to backends and databases for small department projects. We therefore have to make due with the tools we have. In this case Microsoft Office and Microsoft Edge. This projects design is a direct result of this and in many ways utilises ugly (but safe) hacks to bypass the fact that the project hasn't got access to a backend or a database. On the plus side this means it can be utilised by others in the same context.
+Designed for Swedish Anaesthetists in Skövde. The schedule is created/edited in the project's Excel file (dr_schedule.xlsm), which utilizes VBA scripting. Each day's schedule is exported and saved as an XML file in the `.Database/Schedules` folder. XML files are reimported when the date field is updated with a value that already exists as an XML file. Regular saving of the Excel file itself only occurs if DevMode is set to True. Only XML files are updated/created upon saving. Schedules can also be published for viewing as a webpage. The main webpage file is `static/schedule.html`. This page uses an iframe to embed the actual day schedules, for example, Måndag.html, etc.
+
+## Technical Limitations
+
+This project lacks a proper front-end <--> backend <--> database setup due to limitations at the workplace. There's no access to backends and databases for small department projects. Thus, we make do with the tools at hand: Microsoft Office and Microsoft Edge. The project's design is a direct result of this. On the plus side, this means it can be utilized by others in a similar context.
 
 ## Setup
-1) Download repo. Note: Excel file is downloaded with DevMode = "True" (see Config sheet).
-2) Move repo to desired location
-3) Open excel file dr_schedule.xlsm
-4) In config sheet push 'Uppdatera ...' button
-5) Make sure all paths on config sheet are correct and as desired. The .Database folder and static folders can be moved but then the paths in the config sheets need to be updated to reflect this for xml export/import and publishing of html files to work.
-6) When ready push the 'Lås och spara' button to set DevMode = "False" and prepare file for normal usage.
-7) If you want to change the project password open the vba editor and goto modGlobalVariables. Change the value of SIMPLEPSW to what you desire. Not that you should not change the name SIMPLEPSW but the value to the right of the equal sign in between the "" signs. When finished it should look like this  
-Public Const SIMPLEPSW As String = "your_chosen_password"  
-8) If you want extra security look the vba project (google it).
-9) Post in the Tabeller sheets can be modified by normal users.
-10) Changing the number of sections in the main Bemanning sheet will require more work and updating of the xml mappings and tabel references.
-11) Dont move cells unless necessary. If you have to make sure the named ranges still references the correct parts of the sheets. The named ranges are used by the vba code so if they get messed up expect a barrage of error messages...
+
+1. Download the repository. Note: The Excel file is downloaded with DevMode set to "True" (see Config sheet).
+2. Move the repository to the desired location.
+3. Open the Excel file `dr_schedule.xlsm`.
+4. On the Config sheet, click the 'Uppdatera ...' button.
+5. Ensure all paths on the Config sheet are correct and as desired. The `.Database` folder and `static` folder can be moved, but then the paths in the Config sheets need to be updated to reflect this for XML export/import and publishing of HTML files to work.
+6. When ready, click the 'Lås och spara' button which automatically will set DevMode to "False", prepare the file for normal usage and finally save the file.
+7. To change the project password, open the VBA editor and go to `modGlobalVariables`. Change the value of `SIMPLEPSW` to your desired password. Note that you should not change the name `SIMPLEPSW` but only the value to the right of the equal sign between the double quotation marks. When finished, it should look like this:
+   ```vba
+   Public Const SIMPLEPSW As String = "your_chosen_password"
 
 ## Usage
 - There is a word document, user_instructions.docx, with instructions to the user.
+
+## Demo
+Follow link to see a demo of how the web files looks lika after being published by excel file:  
+[Schedule Web page example](static/schedule.html)
