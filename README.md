@@ -23,8 +23,8 @@ This project lacks a proper front-end <--> backend <--> database setup due to li
 
 ## Demo
 Follow link to see a demo of how the web files looks lika after being published by excel file:  
-[Schedule Web page example](https://andreas-thoren.github.io/Dr-Shedule/static/schedule.html)
+[Schedule Web page example](https://andreas-thoren.github.io/Dr-Schedule/static/schedule.html)
 
 ## Repository
 The repository itself is located at:  
-[Dr-Schedule repository](https://github.com/andreas-thoren/Dr-Shedule)
+[Dr-Schedule repository](https://github.com/andreas-thoren/Dr-Schedule)

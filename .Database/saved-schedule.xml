@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <schedule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<scheduledate>2023-01-05</scheduledate>
-	<weekday>Torsdag</weekday>
+	<scheduledate>2023-01-02</scheduledate>
+	<weekday>Måndag</weekday>
 	<operation>
 		<record>
 			<Position>Op ansvarig - Syd, Tel: 73680</Position>
 			<Doctor>Musse Pigg</Doctor>
-			<Comment>Someone made fun of his ears… ;(</Comment>
-		</record>
-		<record>
-			<Position>Kirurgi</Position>
-			<Doctor>Piff</Doctor>
 			<Comment>"Null"</Comment>
 		</record>
 		<record>
-			<Position>Gynekologi</Position>
+			<Position>Kirurgi</Position>
 			<Doctor>Puff</Doctor>
 			<Comment>"Null"</Comment>
 		</record>
 		<record>
+			<Position>Gynekologi</Position>
+			<Doctor>Piff</Doctor>
+			<Comment>"Null"</Comment>
+		</record>
+		<record>
 			<Position>Urologi</Position>
-			<Doctor>"Null"</Doctor>
+			<Doctor>Musse Pigg</Doctor>
 			<Comment>"Null"</Comment>
 		</record>
 		<record>
@@ -30,13 +30,13 @@
 		</record>
 		<record>
 			<Position>Op ansvarig - Nord</Position>
-			<Doctor>"Null"</Doctor>
-			<Comment>"Null"</Comment>
+			<Doctor>Musse Pigg</Doctor>
+			<Comment>Kalle Anka called in sick again…</Comment>
 		</record>
 		<record>
 			<Position>Ortopedi</Position>
-			<Doctor>"Null"</Doctor>
-			<Comment>"Null"</Comment>
+			<Doctor>No one here</Doctor>
+			<Comment>No one here…</Comment>
 		</record>
 		<record>
 			<Position>Öron/Näsa/Hals</Position>
@@ -62,8 +62,8 @@
 	<icu>
 		<record>
 			<Position>IVA ansvarig</Position>
-			<Doctor>Kalle Anka</Doctor>
-			<Comment>Avoid getting critically ill if possible..</Comment>
+			<Doctor>Alexander Anka</Doctor>
+			<Comment>Wish for luck</Comment>
 		</record>
 		<record>
 			<Position>IVA 1</Position>
@@ -89,8 +89,8 @@
 	<oncall>
 		<record>
 			<Position>Primärjour, Tel: 32020</Position>
-			<Doctor>Långben</Doctor>
-			<Comment>"Null"</Comment>
+			<Doctor>Bamse</Doctor>
+			<Comment>Slow but steady</Comment>
 		</record>
 		<record>
 			<Position>IVA jour, Tel: 99802</Position>
@@ -157,13 +157,13 @@
 	</outside>
 	<education>
 		<record>
-			<Position>Salsplacering</Position>
-			<Doctor>Knatte</Doctor>
+			<Position>"Null"</Position>
+			<Doctor>"Null"</Doctor>
 			<Comment>"Null"</Comment>
 		</record>
 		<record>
-			<Position>Sal 15/16</Position>
-			<Doctor>Fnatte</Doctor>
+			<Position>"Null"</Position>
+			<Doctor>"Null"</Doctor>
 			<Comment>"Null"</Comment>
 		</record>
 		<record>
