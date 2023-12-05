@@ -20,7 +20,7 @@ This project lacks a proper front-end <--> backend <--> database setup due to li
 
 ## Usage
 There are user instructions in Swedish here:  
-[Användarinstruktion - Svenska](https://andreas-thoren.github.io/Dr-Schedule/docs/user_info_swedish.md)
+[Användarinstruktion - Svenska](https://andreas-thoren.github.io/Dr-Schedule/docs/user_info_swedish.html)
 
 ## Demo
 Follow link to see a demo of how the web files looks lika after being published by excel file:  
