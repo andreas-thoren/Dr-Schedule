@@ -19,7 +19,8 @@ This project lacks a proper front-end <--> backend <--> database setup due to li
    Public Const SIMPLEPSW As String = "your_chosen_password"
 
 ## Usage
-- There is a word document, user_instructions.docx, with instructions to the user.
+There are user instructions in Swedish here:  
+[Användarinstruktion - Svenska](https://andreas-thoren.github.io/Dr-Schedule/docs/user_info_swedish.md)
 
 ## Demo
 Follow link to see a demo of how the web files looks lika after being published by excel file:  

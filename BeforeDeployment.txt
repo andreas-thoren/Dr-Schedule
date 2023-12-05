@@ -1,5 +1,0 @@
-1) Copy project folder to desired location.
-2) Change name of project, webfolder and schedule.html to desired names.
-3) Make sure all settings in the Config sheet are correct!
-4) Protect vba project by opening visual basics editor. Right click project name in project explorer. Change setting.
-5) Use admin button to lock/save program.
