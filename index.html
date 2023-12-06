@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excel-Dr-Schedule</title>
+  <link rel="stylesheet" href="docs/styles/github-markdown.css">
+</head>
+
+<body>
+
+  <article class="markdown-body markdown-container">
+    <h1>Doctors Day Schedule</h1>
+    <p>Designed for Swedish Anaesthetists in Skövde. The schedule is created/edited in the project's Excel file (dr_schedule.xlsm), which utilizes VBA scripting. Each day's schedule is exported and saved as an XML file in the <code>.Database/Schedules</code> folder. XML files are reimported when the date field is updated with a value that already exists as an XML file. Regular saving of the Excel file itself only occurs if DevMode is set to True. Only XML files are updated/created upon saving. Schedules can also be published for viewing as a webpage. The main webpage file is <code>static/schedule.html</code>. This page uses an iframe to embed the actual day schedules, for example, Måndag.html, etc.</p>
+    <h2>Technical Limitations</h2>
+    <p>This project lacks a proper front-end &lt;--&gt; backend &lt;--&gt; database setup due to limitations at the workplace. There's no access to backends and databases for small department projects. Thus, we make do with the tools at hand: Microsoft Office and Microsoft Edge. The project's design is a direct result of this. On the plus side, this means it can be utilized by others in a similar context.</p>
+    <h2>Setup</h2>
+
+    <ol>
+      <li>Download the repository. Note: The Excel file is downloaded with DevMode set to "True" (see Config sheet).</li>
+      <li>Move the repository to the desired location.</li>
+      <li>Open the Excel file <code>dr_schedule.xlsm</code>.</li>
+      <li>On the Config sheet, click the 'Uppdatera ...' button.</li>
+      <li>Ensure all paths on the Config sheet are correct and as desired. The <code>.Database</code> folder and <code>static</code> folder can be moved, but then the paths in the Config sheets need to be updated to reflect this for XML export/import and publishing of HTML files to work.</li>
+      <li>When ready, click the 'Lås och spara' button which automatically will set DevMode to "False", prepare the file for normal usage and finally save the file.</li>
+      <li>To change the project password, open the VBA editor and go to <code>modGlobalVariables</code>. Change the value of <code>SIMPLEPSW</code> to your desired password. Note that you should not change the name <code>SIMPLEPSW</code> but only the value to the right of the equal sign between the double quotation marks. When finished, it should look like this:
+         ```vba
+         Public Const SIMPLEPSW As String = "your_chosen_password"</li>
+    </ol>
+
+    <h2>Usage</h2>
+    <p>There are user instructions in Swedish here:<br />
+    <a href="https://andreas-thoren.github.io/Dr-Schedule/docs/user_info_swedish.html">Användarinstruktion - Svenska</a></p>
+    <h2>Demo</h2>
+    <p>Follow link to see a demo of how the web files looks lika after being published by excel file:<br />
+    <a href="https://andreas-thoren.github.io/Dr-Schedule/static/schedule.html">Schedule Web page example</a></p>
+    <h2>Repository</h2>
+    <p>The repository itself is located at:<br />
+    <a href="https://github.com/andreas-thoren/Dr-Schedule">Dr-Schedule repository</a></p> 
+
+  </article>
+</body>
+</html>
