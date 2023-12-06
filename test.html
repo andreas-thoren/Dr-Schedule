@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+</head>
+<body>
+
+  <article id="ajax-article">
+    Change content of this article with button press
+  </article>
+
+  <button id="test-button">
+    Press me
+  </button>
+  
+</body>
+<script>
+  const url = "./docs/user_info_swedish.html"
+  const url2 = "https://andreas-thoren.github.io/Dr-Schedule/"
+  const btn = document.getElementById("test-button");
+  const article = document.getElementById("ajax-article");
+  btn.addEventListener("click", () => {
+    fetch(url2)
+      .then(x => x.text())
+      .then(y => article.innerHTML = y);
+  });
+</script>
+</html>
