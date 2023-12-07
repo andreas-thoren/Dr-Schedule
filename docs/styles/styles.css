@@ -21,7 +21,6 @@ a {
 /* BASE STYLES */
 .page {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #c8d8e4;
   color: #f2f2f2;
 }
 
@@ -32,28 +31,7 @@ a {
 }
 
 /* STYLES */
-.sidebar {
-  display: flex;
-  justify-content: right;
-  flex: 1 0 100px;
-  background-color: #2b6777;
-}
 
-.vert-heading {
-  position: fixed;
-  top: 70px;
-  flex: 0 0 100px;
-  padding: 0px 30px 30px 10px;
-  text-orientation: upright;
-  writing-mode: vertical-lr;
-  font-size: 20px;
-}
-
-@media only screen and (max-width: 1150px) {
-  .sidebar {
-    display: none;
-  }
-}
 .nav {
   display: flex;
   justify-content: left;
@@ -92,9 +70,19 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 1 0 920px;
-  max-width: 1200px;
+  flex: 0 1 980px;
+  min-width: 200px;
   justify-content: center;
+}
+
+.markdown-container {
+	padding: 45px;
+}
+
+@media (max-width: 767px) {
+	.markdown-container {
+		padding: 15px;
+	}
 }
 
 #main {
