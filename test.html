@@ -5,27 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   
-</head>
-<body>
+  <link rel="icon" type="image/x-icon" href="docs/images/favicon.png">
+  <link rel="stylesheet" href="docs/styles/styles.css">
 
-  <article id="ajax-article">
-    Change content of this article with button press
-  </article>
-
-  <button id="test-button">
-    Press me
-  </button>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+  <script src="docs/scripts/script.js" defer></script>
   
+</head>
+<body class="page">
+
+  <div class="app">
+
+    <div class="sidebar">
+      <div class="vert-heading">
+        <h1>Läkarschema</h1>
+      </div>
+    </div>
+
+    <div class="center">
+      <main id="main">
+      </main>
+    </div>
+
+    <nav class="nav">
+      <div class="vert-links">
+        <a id="a-readme" href="#" class="weekday-link">Project info</a>
+        <a id="a-user-info" href="#" class="weekday-link">User info</a>
+      </div>
+    </nav>
+
+  </div>
+
 </body>
-<script>
-  const url = "./docs/user_info_swedish.html"
-  const url2 = "https://andreas-thoren.github.io/Dr-Schedule/"
-  const btn = document.getElementById("test-button");
-  const article = document.getElementById("ajax-article");
-  btn.addEventListener("click", () => {
-    fetch(url2)
-      .then(x => x.text())
-      .then(y => article.innerHTML = y);
-  });
-</script>
+
 </html>
