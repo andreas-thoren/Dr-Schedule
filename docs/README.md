@@ -20,12 +20,11 @@ Public Const SIMPLEPSW As String = "your_chosen_password"
 ```
 
 ## Usage
-See navigation links on the top of the page to find link to Swedish user instructions.
-
+There are Swedish user instructions here:  
+[User instructions - Swedish](https://andreas-thoren.github.io/Dr-Schedule/?doc=user_info_swedish)
 ## Demo
 Follow link to see a demo of how the web files looks lika after being published by excel file:  
 [Schedule Web page example](https://andreas-thoren.github.io/Dr-Schedule/static/schedule.html)
-
 ## Repository
 The repository itself is located at:  
 [Dr-Schedule repository](https://github.com/andreas-thoren/Dr-Schedule)
