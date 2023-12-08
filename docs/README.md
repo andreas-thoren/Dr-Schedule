@@ -20,8 +20,7 @@ Public Const SIMPLEPSW As String = "your_chosen_password"
 ```
 
 ## Usage
-There are user instructions in Swedish here:  
-[Användarinstruktion - Svenska](https://andreas-thoren.github.io/Dr-Schedule/docs/user_info_swedish.html)
+See navigation links on the top of the page to find link to Swedish user instructions.
 
 ## Demo
 Follow link to see a demo of how the web files looks lika after being published by excel file:  
