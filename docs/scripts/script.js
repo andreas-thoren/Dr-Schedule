@@ -2,7 +2,7 @@ const urlReadme = "./docs/README.md"
 const urlUserInfo = "./docs/user_info_swedish.md"
 const aReadme = document.getElementById("a-readme");
 const aUserInfo = document.getElementById("a-user-info");
-const main = document.getElementById("main");
+const main = document.getElementsByClassName("main")[0];
 
 let converter = new showdown.Converter();
 converter.setFlavor('github');

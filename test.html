@@ -6,8 +6,8 @@
   <title>Document</title>
   
   <link rel="icon" type="image/x-icon" href="docs/images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.4.0/github-markdown.min.css">
   <link rel="stylesheet" href="docs/styles/styles.css">
-  <link rel="stylesheet" href="docs/styles/github-markdown.css">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
   <script src="docs/scripts/script.js" defer></script>
@@ -15,19 +15,24 @@
 </head>
 <body class="page">
 
-  <div class="app">
+  <div class="app markdown-body">
+    
+    <div class="side-area"></div>
 
-    <div class="center markdown-body markdown-container">
-      <main id="main">
-      </main>
+    <div class="center">
+
+      <nav class="nav">
+        <a id="a-readme" href="#" class="link">Project info</a>
+        <a id="a-user-info" href="#" class="link">User info</a>
+      </nav>
+
+      <div class="divider"></div>
+
+      <main class="main"></main>
+
     </div>
 
-    <nav class="nav">
-      <div class="vert-links">
-        <a id="a-readme" href="#" class="weekday-link">Project info</a>
-        <a id="a-user-info" href="#" class="weekday-link">User info</a>
-      </div>
-    </nav>
+    <div class="side-area"></div>
 
   </div>
 

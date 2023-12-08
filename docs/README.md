@@ -15,8 +15,9 @@ This project lacks a proper front-end <--> backend <--> database setup due to li
 5. Ensure all paths on the Config sheet are correct and as desired. The `.Database` folder and `static` folder can be moved, but then the paths in the Config sheets need to be updated to reflect this for XML export/import and publishing of HTML files to work.
 6. When ready, click the 'Lås och spara' button which automatically will set DevMode to "False", prepare the file for normal usage and finally save the file.
 7. To change the project password, open the VBA editor and go to `modGlobalVariables`. Change the value of `SIMPLEPSW` to your desired password. Note that you should not change the name `SIMPLEPSW` but only the value to the right of the equal sign between the double quotation marks. When finished, it should look like this:
-   ```vba
-   Public Const SIMPLEPSW As String = "your_chosen_password"
+```vba
+Public Const SIMPLEPSW As String = "your_chosen_password"
+```
 
 ## Usage
 There are user instructions in Swedish here:  
