@@ -41,14 +41,17 @@ async function setDocument(fileName) {
 }
 
 function setDocumentUrl(fileName, pushState = true) {
-  if (queryParams.get("doc") !== fileName) {
-    queryParams.set("doc", fileName);
 
-    if (pushState) {
-      history.pushState(null, null, "?"+queryParams.toString());
-    } else {
-      history.replaceState(null, null, "?"+queryParams.toString());
-    }
+  if (queryParams.get("doc") === fileName) {
+    return
+  }
+
+  queryParams.set("doc", fileName);
+
+  if (pushState) {
+    history.pushState(null, null, "?"+queryParams.toString());
+  } else {
+    history.replaceState(null, null, "?"+queryParams.toString());
   }
 }
 
@@ -57,8 +60,8 @@ topNav.addEventListener("click", async (event) => {
   let target = event.target;
 
   if ("documentName" in target.dataset) {
-    let fileName = target.dataset.documentName;
     event.preventDefault();
+    let fileName = target.dataset.documentName;
     await setDocument(fileName);
     setDocumentUrl(fileName);
   }
