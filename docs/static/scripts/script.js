@@ -1,46 +1,67 @@
-const aReadme = document.getElementById("a-readme");
-const aUserInfo = document.getElementById("a-user-info");
+"use strict";
+
+// GLOBAL VARS AND CONSTANTS
+const topNav = document.getElementById("top-nav");
 const mainDiv = document.getElementsByClassName("main")[0];
+const markdownFolder = "./docs/"
 
 let queryParams = new URLSearchParams(window.location.search);
 let converter = new showdown.Converter();
 converter.setFlavor('github');
 
 // MAIN FUNCTION - Executes after DOM is loaded
-function main() {
-  let doc = queryParams.get("doc");
-  doc = (doc == null) ? "README" : doc;
-  fetchConvertMarkdown(doc).then(parsedHtml => mainDiv.innerHTML = parsedHtml);
-  queryParams.set("doc", doc);
-  history.replaceState(null, null, "?"+queryParams.toString());
+async function main() {
+  let fileName = queryParams.get("doc") || "README.md";
+  await setDocument(fileName);
+  setDocumentUrl(fileName, false);
 } 
 
 // FUNCTION DEFINITIONS
 async function fetchConvertMarkdown(fileName) {
-  let url = "./docs/" + fileName + ".md";
-  const x = await fetch(url);
-  const y = await x.text();
-  return converter.makeHtml(y);
+  let url = markdownFolder + fileName;
+
+  try {
+    let response = await fetch(url);
+    
+    if (!response.ok) {
+      throw new Error(`Failed to fetch ${url}: ${response.statusText}`);
+    }
+
+    let markDown = await response.text();
+    return converter.makeHtml(markDown);
+  } catch (error) {
+    console.log(`Error fetching or converting markdown document ${fileName}: `, error);
+    return `<p>Could not fetch document ${fileName}.</p>`;
+  }
 }
 
-function gotoDocument(fileName) {
-  fetchConvertMarkdown(fileName).then(parsedHtml => mainDiv.innerHTML = parsedHtml);
+async function setDocument(fileName) {
+  const parsedHtml = await fetchConvertMarkdown(fileName);
+  mainDiv.innerHTML = parsedHtml;
+}
 
+function setDocumentUrl(fileName, pushState = true) {
   if (queryParams.get("doc") !== fileName) {
     queryParams.set("doc", fileName);
-    history.pushState(null, null, "?"+queryParams.toString());
+
+    if (pushState) {
+      history.pushState(null, null, "?"+queryParams.toString());
+    } else {
+      history.replaceState(null, null, "?"+queryParams.toString());
+    }
   }
 }
 
 // EVENTS
-aReadme.addEventListener("click", (event) => {
-  event.preventDefault();
-  gotoDocument("README");
-});
+topNav.addEventListener("click", async (event) => {
+  let target = event.target;
 
-aUserInfo.addEventListener("click", (event) => {
-  event.preventDefault();
-  gotoDocument("user_info_swedish");
+  if ("documentName" in target.dataset) {
+    let fileName = target.dataset.documentName;
+    event.preventDefault();
+    await setDocument(fileName);
+    setDocumentUrl(fileName);
+  }
 });
 
 main();
